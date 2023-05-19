@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EjAnimal">
+  <ClassDiagramComponents>
+    <Class name="EjAnimal" package="ejanimal" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Animal" package="Entidades" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="hacerRuido" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Gato" package="Entidades" visibility="public" xPosition="320.0" yPosition="272.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="hacerRuido" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Perro" package="Entidades" visibility="public" xPosition="616.0" yPosition="285.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="hacerRuido" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="interfazPrueba" package="Entidades" visibility="public" xPosition="0.0" yPosition="156.0">
+      <Methods>
+        <Method name="mostrarMensaje" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Entidades.Gato" target="Entidades.Animal"/>
+    <IsRelation name="is" source="Entidades.Perro" target="Entidades.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
