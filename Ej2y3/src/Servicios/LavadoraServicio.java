@@ -28,15 +28,16 @@ import java.util.Scanner;
 public class LavadoraServicio extends ElectrodomesticoServicio{
     private Scanner leer = new Scanner(System.in).useDelimiter("\n");
     
-    public void crearLavadora(Lavadora lavadora){
+    public Lavadora crearLavadora(){
         System.out.println("Creando una Lavadora: ");
+        Lavadora lavadora = new Lavadora();
         super.crearElectrodomestico(lavadora);
         System.out.println("Ingrese carga de la lavadora:");
         double carga = leer.nextDouble();
         lavadora.setCarga(carga);
-        
+        return lavadora;
     }
-
+    
     public void precioFinal(Lavadora l) {
         super.precioFinal(l);
         double carga = l.getCarga();

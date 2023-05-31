@@ -29,8 +29,9 @@ import java.util.Scanner;
  */
 public class TelevisorServicio extends ElectrodomesticoServicio{
     private Scanner leer = new Scanner(System.in).useDelimiter("\n");
-    public void crearTelevisor(Televisor televisor){
+    public Televisor crearTelevisor(){
         System.out.println("Creando un Televisor: ");
+        Televisor televisor = new Televisor();
         super.crearElectrodomestico(televisor);
         System.out.println("Ingrese la resolución en pulgadas del televisor:");
         double resolucion = leer.nextDouble();
@@ -50,6 +51,7 @@ public class TelevisorServicio extends ElectrodomesticoServicio{
             tdt = false;
         }
         televisor.setSintonizadorTDT(tdt);
+        return televisor;
     }
     
     public void precioFinal(Televisor televisor){

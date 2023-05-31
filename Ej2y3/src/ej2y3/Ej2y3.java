@@ -35,12 +35,9 @@ public class Ej2y3 {
         LavadoraServicio ls = new LavadoraServicio();
         TelevisorServicio ts = new TelevisorServicio();
         
-        Lavadora lavadora = new Lavadora();
-        Televisor televisor = new Televisor();
-        
-        ls.crearLavadora(lavadora);
+        Lavadora lavadora = ls.crearLavadora();
         ls.precioFinal(lavadora);
-        ts.crearTelevisor(televisor);
+        Televisor televisor = ts.crearTelevisor();
         ts.precioFinal(televisor);
         
         System.out.println(lavadora.toString());

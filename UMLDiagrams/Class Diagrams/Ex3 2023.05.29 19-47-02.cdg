@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ex3">
+  <ClassDiagramComponents>
+    <Class name="Ex3" package="ex3" visibility="public" xPosition="849.0" yPosition="106.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="String[]" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Alojamiento" package="" visibility="public" xPosition="259.0" yPosition="39.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="direccion" type="String" visibility="private"/>
+        <Field name="localidad" type="String" visibility="private"/>
+        <Field name="gerente" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Hotel" package="" visibility="public" xPosition="122.0" yPosition="282.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="AlojExtraHotelero" package="" visibility="public" xPosition="454.0" yPosition="282.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Hotel4" package="" visibility="public" xPosition="122.0" yPosition="407.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Hotel5" package="" visibility="public" xPosition="122.0" yPosition="548.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Camping" package="" visibility="public" xPosition="417.0" yPosition="441.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Residencia" package="" visibility="public" xPosition="644.0" yPosition="441.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Hotel" target="Alojamiento"/>
+    <IsRelation name="is" source="Camping" target="AlojExtraHotelero"/>
+    <IsRelation name="is" source="Hotel5" target="Hotel4"/>
+    <IsRelation name="is" source="AlojExtraHotelero" target="Alojamiento"/>
+    <IsRelation name="is" source="Hotel4" target="Hotel"/>
+    <IsRelation name="is" source="Residencia" target="AlojExtraHotelero"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
